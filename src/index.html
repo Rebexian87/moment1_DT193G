@@ -6,8 +6,89 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    <h1 class="text-red-600 text-3xl font-bold md:text-5xl">Hejsan</h1>
+<body class="m-0">
     
+    <!-- <div class="md:flex">
+        <p class="bg-amber-300 p-5 m-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate unde veniam dolore fuga porro? Ex sunt corrupti provident voluptas dolores, error inventore eum suscipit sapiente exercitationem cumque quisquam facere?</p>
+         <p class="bg-sky-600 p-5 m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate unde veniam dolore fuga porro? Ex sunt corrupti provident voluptas dolores, error inventore eum suscipit sapiente exercitationem cumque quisquam facere?</p>
+          <p class="bg-red-400 p-5 m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate unde veniam dolore fuga porro? Ex sunt corrupti provident voluptas dolores, error inventore eum suscipit sapiente exercitationem cumque quisquam facere?</p>
+
+    </div> -->
+    
+    <div>
+
+        <h1 class="text-red-600 text-3xl font-bold md:text-5xl">Tabell och formulär med tailwind</h1>
+
+        <table class="border-separate border border-gray-600 md:border-spacing-2" >
+            <caption class="caption-top">Table 1: Bucketlist</caption>
+            <thead>
+                <tr>
+                    <th class="border border-gray-300 text-2xl p-1 text-center">Namn</th>
+                    <th class="border border-gray-300 text-2xl p-1 text-center">Beskrivning</th>
+                    <th class="border border-gray-300 text-2xl p-1 text-center">Utförd</th>
+                    <th class="border border-gray-300 text-2xl p-1 text-center">Prio</th>                  
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="border border-gray-300 text-2xl p-1 text-center">Fallskärm</td>
+                    <td class="border border-gray-300 text-2xl p-1 text-center">Hoppa fallaskärm</td>
+                    <td class="border border-gray-300 text-2xl p-1 text-center">Nej</td>
+                    <td class="border border-gray-300 text-2xl p-1 text-center">1</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        
+     
+        <form class="bg-amber-200 w-130 p-2 mx-auto">
+            <label for="name" class="mb-2 text-2xl font-normal block text-center ">Namn</label>
+            <input type="text" id="name" class="block mx-auto border border-gray-300 bg-amber-50 w-xs h-8  md:w-96">
+            <label for="description" class="block text-center mb-2 text-2xl font-normal ">Beskrivning</label>
+            <textarea name="description" id="description" class=" block mx-auto border border-gray-300  bg-amber-50 h-24 w-xs md:w-96"></textarea><br>
+            <label for="done" class="block text-center mb-2 text-2xl font-normal ">Utförd</label>
+            <input type="checkbox" name="done" id="done">
+            <label for="prio" class="block text-center mb-2 text-2xl font-normal ">Prioritering</label>
+            <select class="border border-gray-300 bg-amber-50" name="prio" id="prio">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        
+        </form>
+
+    
+    </div>
 </body>
 </html>
+
+    <!-- <div>
+
+        <h1 class="text-red-600 text-3xl font-bold md:text-5xl">Tabell och formulär med tailwind</h1>
+
+        <table class="border-separate border border-gray-600 md:border-spacing-2" >
+            <caption class="caption-top">Table 1: Bucketlist</caption>
+            <thead>
+                <tr>
+                    <th class="border border-gray-300 text-2xl p-1 text-center">Namn</th>
+                    <th class="border border-gray-300 text-2xl p-1 text-center">Beskrivning</th>
+                    <th class="border border-gray-300 text-2xl p-1 text-center">Utförd</th>
+                    <th class="border border-gray-300 text-2xl p-1 text-center">Prio</th>                  
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="border border-gray-300 text-2xl p-1 text-center">Fallskärm</td>
+                    <td class="border border-gray-300 text-2xl p-1 text-center">Hoppa fallaskärm</td>
+                    <td class="border border-gray-300 text-2xl p-1 text-center">Nej</td>
+                    <td class="border border-gray-300 text-2xl p-1 text-center">1</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
