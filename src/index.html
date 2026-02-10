@@ -17,9 +17,11 @@
     
     <div>
 
-        <h1 class="text-red-600 text-3xl font-bold md:text-5xl">Tabell och formulär med tailwind</h1>
+        <h1 class="text-red-600 text-3xl font-bold m-6 md:text-5xl text-center ">Tabell och formulär med tailwind</h1>
+          </div>
 
-        <table class="border-separate border border-gray-600 md:border-spacing-2" >
+    <div>
+        <table class=" mx-auto  border-separate border border-gray-600 m-6 md:border-spacing-2" >
             <caption class="caption-top">Table 1: Bucketlist</caption>
             <thead>
                 <tr>
@@ -43,23 +45,23 @@
     </div>
 
     <div>
-        
-     
+      
         <form class="bg-amber-200 w-130 p-2 mx-auto">
-            <label for="name" class="mb-2 text-2xl font-normal block text-center ">Namn</label>
+            <label for="name" class="mb-2 text-2xl font-normal block text-center m-4">Namn</label>
             <input type="text" id="name" class="block mx-auto border border-gray-300 bg-amber-50 w-xs h-8  md:w-96">
-            <label for="description" class="block text-center mb-2 text-2xl font-normal ">Beskrivning</label>
+            <label for="description" class="block text-center mb-2 text-2xl font-normal m-4">Beskrivning</label>
             <textarea name="description" id="description" class=" block mx-auto border border-gray-300  bg-amber-50 h-24 w-xs md:w-96"></textarea><br>
-            <label for="done" class="block text-center mb-2 text-2xl font-normal ">Utförd</label>
-            <input type="checkbox" name="done" id="done">
-            <label for="prio" class="block text-center mb-2 text-2xl font-normal ">Prioritering</label>
-            <select class="border border-gray-300 bg-amber-50" name="prio" id="prio">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+            <label for="done" class="block text-center mb-2 text-2xl font-normal m-4">Utförd</label>
+            <input class="block mx-auto" type="checkbox" name="done" id="done">
+            <label for="prio" class="block text-center mb-2 text-2xl font-normal m-4">Prioritering</label>
+            <select class="border border-gray-300 bg-amber-50 block mx-auto" name="prio" id="prio">
+                <option value="1">Prio 1</option>
+                <option value="2">Prio 2</option>
+                <option value="3">Prio 3</option>
             </select>
         
         </form>
+      
 
     
     </div>
