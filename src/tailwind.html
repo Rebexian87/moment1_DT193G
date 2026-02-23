@@ -9,21 +9,16 @@
 <body class="m-0">
 
        <header>
+        
         <nav>
-            <ul >
-                <li class="label-inline" ><a href="index.html">Startsida</a></li>
-                <li><a href="milligram.html">milligram</a></li>
-                <li><a href="tailwind.html">Tailwind</a></li>
+            <ul class="flex justify-center" >
+                <li class="m-3 text-2xl"><a href="index.html">Startsida</a></li>
+                <li class="m-3 text-2xl"><a href="milligram.html">milligram</a></li>
+                <li class="m-3 text-2xl"><a href="tailwind.html">Tailwind</a></li>
             </ul>
         </nav>
     </header>
-    
-    <!-- <div class="md:flex">
-        <p class="bg-amber-300 p-5 m-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate unde veniam dolore fuga porro? Ex sunt corrupti provident voluptas dolores, error inventore eum suscipit sapiente exercitationem cumque quisquam facere?</p>
-         <p class="bg-sky-600 p-5 m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate unde veniam dolore fuga porro? Ex sunt corrupti provident voluptas dolores, error inventore eum suscipit sapiente exercitationem cumque quisquam facere?</p>
-          <p class="bg-red-400 p-5 m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate unde veniam dolore fuga porro? Ex sunt corrupti provident voluptas dolores, error inventore eum suscipit sapiente exercitationem cumque quisquam facere?</p>
 
-    </div> -->
     
     <div>
 
@@ -56,19 +51,26 @@
 
     <div>
       
-        <form class="bg-amber-200 w-130 p-2 mx-auto">
-            <label for="name" class="mb-2 text-2xl font-normal block text-center m-4">Namn</label>
-            <input type="text" id="name" class="block mx-auto border border-gray-300 bg-amber-50 w-xs h-8  md:w-96">
-            <label for="description" class="block text-center mb-2 text-2xl font-normal m-4">Beskrivning</label>
-            <textarea name="description" id="description" class=" block mx-auto border border-gray-300  bg-amber-50 h-24 w-xs md:w-96"></textarea><br>
+        <form class="bg-amber-200 mx-auto w-full p-2 md:m-4">
+            <label for="name" class="mb-2 text-2xl font-normal block m-4">Namn</label>
+            <input type="text" id="name" class=" border border-gray-300 bg-amber-50 w-full h-8 ">
+            <label for="description" class=" mb-2 text-2xl font-normal m-4">Beskrivning</label>
+            <textarea name="description" id="description" class="  border border-gray-300  bg-amber-50 h-24 w-full"></textarea><br>
+            <div class="flex">
             <label for="done" class="block text-center mb-2 text-2xl font-normal m-4">Utförd</label>
-            <input class="block mx-auto" type="checkbox" name="done" id="done">
-            <label for="prio" class="block text-center mb-2 text-2xl font-normal m-4">Prioritering</label>
-            <select class="border border-gray-300 bg-amber-50 block mx-auto" name="prio" id="prio">
-                <option value="1">Prio 1</option>
+            <input type="checkbox" name="done" id="done">
+             </div>
+               <div class="flex">
+            <label for="prio" class="block text-center mb-2 text-2xl font-normal m-4">Prioritering:</label>
+            
+            <select class="p-2 text-2xl border border-gray-300 bg-amber-50 mx-4" name="prio" id="prio">
+                <option class="" value="1">Prio 1</option>
                 <option value="2">Prio 2</option>
                 <option value="3">Prio 3</option>
             </select>
+            </div>
+            <input class=" bg-amber-50 mb-2 text-2xl font-normal block m-4 border border-black p-2" type="submit" value="Skicka">
+           
         
         </form>
       
@@ -78,29 +80,4 @@
 </body>
 </html>
 
-    <!-- <div>
-
-        <h1 class="text-red-600 text-3xl font-bold md:text-5xl">Tabell och formulär med tailwind</h1>
-
-        <table class="border-separate border border-gray-600 md:border-spacing-2" >
-            <caption class="caption-top">Table 1: Bucketlist</caption>
-            <thead>
-                <tr>
-                    <th class="border border-gray-300 text-2xl p-1 text-center">Namn</th>
-                    <th class="border border-gray-300 text-2xl p-1 text-center">Beskrivning</th>
-                    <th class="border border-gray-300 text-2xl p-1 text-center">Utförd</th>
-                    <th class="border border-gray-300 text-2xl p-1 text-center">Prio</th>                  
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td class="border border-gray-300 text-2xl p-1 text-center">Fallskärm</td>
-                    <td class="border border-gray-300 text-2xl p-1 text-center">Hoppa fallaskärm</td>
-                    <td class="border border-gray-300 text-2xl p-1 text-center">Nej</td>
-                    <td class="border border-gray-300 text-2xl p-1 text-center">1</td>
-
-                </tr>
-            </tbody>
-        </table>
-    </div> -->
+   
