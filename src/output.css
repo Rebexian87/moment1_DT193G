@@ -12,6 +12,7 @@
     --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-black: #000;
     --spacing: 0.25rem;
     --container-xs: 20rem;
     --text-2xl: 1.5rem;
@@ -196,9 +197,6 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
-  .m-2 {
-    margin: calc(var(--spacing) * 2);
-  }
   .m-3 {
     margin: calc(var(--spacing) * 3);
   }
@@ -223,35 +221,20 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
-  .w-130 {
-    width: calc(var(--spacing) * 130);
-  }
   .w-full {
     width: 100%;
-  }
-  .w-xs {
-    width: var(--container-xs);
   }
   .caption-top {
     caption-side: top;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .border-separate {
     border-collapse: separate;
-  }
-  .resize {
-    resize: both;
   }
   .justify-center {
     justify-content: center;
@@ -259,6 +242,9 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-black {
+    border-color: var(--color-black);
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
@@ -300,13 +286,6 @@
   .text-red-600 {
     color: var(--color-red-600);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .md\:m-4 {
     @media (width >= 48rem) {
       margin: calc(var(--spacing) * 4);
@@ -335,11 +314,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-border-spacing-x {
   syntax: "<length>";
   inherits: false;
@@ -355,17 +329,6 @@
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
-      --tw-border-spacing-x: 0;
-      --tw-border-spacing-y: 0;
-    }
-  }
-}
-t (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-border-spacing-x: 0;
       --tw-border-spacing-y: 0;
     }
